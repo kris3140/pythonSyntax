@@ -1,0 +1,19 @@
+
+
+pad = r"C:\Users\nicol\OneDrive\Bureaublad\words.txt"
+file = open(pad, 'rt')
+
+file = open('words.txt', 'rt')   # r = read, a = append, w = (over)write
+
+
+lijst = [1, 2, 3]
+f = open('CSVfile.txt', "w")
+f.write(lijst)
+f.close()
+
+
+
+
+
+
+
