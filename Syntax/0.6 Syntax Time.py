@@ -1,6 +1,8 @@
 from time import time, ctime, sleep
 from datetime import datetime,timedelta
 
+dictMonths = { 'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'Jun': 6, 'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12 }
+
 # time() = seconds since 01 01 1970
 # ctime() = date
 # sleep() = wait a number of seconds
@@ -52,3 +54,13 @@ print('today :', today)
 thousandDays = timedelta(days=1000)
 todayPlus = today + thousandDays
 print('today + :', todayPlus)
+
+begin = datetime.now()
+sleep(62)
+end = datetime.now()
+duration = end - begin
+print(begin)
+print(end)
+print(f'Duration = {(duration.seconds / 60):.2f}')
+
+      

@@ -12,7 +12,9 @@ f.write(lijst)
 f.close()
 
 
-
+with open('CSVfile.txt', "w") as f:
+    f.write(lijst)
+# hier is geen close nodig, dit sluit zichzelf
 
 
 
